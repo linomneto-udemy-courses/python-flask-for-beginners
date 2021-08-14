@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>A very simple Calculator</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href='{{ url_for("static", filename="style.css") }}'>
+</head>
+
+<body>
+
+    <div class="content">
+        <form class="pure-form" action="calculate" method="POST">
+            <fieldset>
+                <h2>A very simple Calculator</h2>
+                <input type="text" placeholder="Type a number" />
+                <select>
+                    <option>+ Sum</option>
+                    <option>- Subtract</option>
+                    <option>/ Divide</option>
+                    <option>* Multiply</option>
+                </select>
+                <input type="text" placeholder="Type another number" />
+                <button type="submit" class="pure-button pure-button-primary">Calculate</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
