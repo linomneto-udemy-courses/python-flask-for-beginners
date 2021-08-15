@@ -24,6 +24,30 @@
                 <button type="submit" class="pure-button pure-button-primary">Calculate</button>
             </fieldset>
         </form>
+
+        {% if historic %}
+            <table class="pure-table">
+                <thead>
+                    <th>First Number</th>
+                    <th>Operation</th>
+                    <th>Second Number</th>
+                    <th>Result</th>
+                </thead>
+                <tbody>    
+                    {% for calc in historic %}
+                    <tr>
+                        <td>{{ calc['n1'] }}</td>
+                        <td>{{ calc['op'] }}</td>
+                        <td>{{ calc['n2'] }}</td>
+                        <td>{{ calc['result'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <br />
+            <a href="/reset" class="button-warning pure-button">Reset</a>
+        {% endif %}
+
     </div>
 
 </body>

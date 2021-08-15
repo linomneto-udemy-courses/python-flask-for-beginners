@@ -17,6 +17,6 @@ class Calculator:
         elif (self.op == '*'):
             self.result = self.n1 * self.n2
         else:
-            raise Exception("Not support calculation operation.")
+            raise Exception("Not supported calculation operation.")
         return self.result
     

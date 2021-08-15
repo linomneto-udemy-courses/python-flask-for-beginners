@@ -3,3 +3,11 @@ div.content {
     padding-right: 20%;
     margin-top: 2em;
 }
+
+table tbody tr:first-child {
+    background-color: aqua;
+}
+
+.button-warning {
+    background-color: orange;
+}
